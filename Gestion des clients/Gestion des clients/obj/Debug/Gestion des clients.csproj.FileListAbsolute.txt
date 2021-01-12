@@ -1,0 +1,10 @@
+C:\Users\Youcode\Desktop\Les briefs\Gestion des clients\Gestion des clients\bin\Debug\Gestion des clients.exe.config
+C:\Users\Youcode\Desktop\Les briefs\Gestion des clients\Gestion des clients\bin\Debug\Gestion des clients.exe
+C:\Users\Youcode\Desktop\Les briefs\Gestion des clients\Gestion des clients\bin\Debug\Gestion des clients.pdb
+C:\Users\Youcode\Desktop\Les briefs\Gestion des clients\Gestion des clients\obj\Debug\Gestion des clients.csprojAssemblyReference.cache
+C:\Users\Youcode\Desktop\Les briefs\Gestion des clients\Gestion des clients\obj\Debug\Gestion_des_clients.Form1.resources
+C:\Users\Youcode\Desktop\Les briefs\Gestion des clients\Gestion des clients\obj\Debug\Gestion_des_clients.Properties.Resources.resources
+C:\Users\Youcode\Desktop\Les briefs\Gestion des clients\Gestion des clients\obj\Debug\Gestion des clients.csproj.GenerateResource.cache
+C:\Users\Youcode\Desktop\Les briefs\Gestion des clients\Gestion des clients\obj\Debug\Gestion des clients.csproj.CoreCompileInputs.cache
+C:\Users\Youcode\Desktop\Les briefs\Gestion des clients\Gestion des clients\obj\Debug\Gestion des clients.exe
+C:\Users\Youcode\Desktop\Les briefs\Gestion des clients\Gestion des clients\obj\Debug\Gestion des clients.pdb
