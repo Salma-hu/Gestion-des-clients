@@ -32,7 +32,12 @@ namespace Gestion_des_clients
         {
             DA = new SqlDataAdapter("Select * from client", cnx);
             DA.Fill(DS,"clt");
-            dataGridView1.DataSource = DS.Tables["clt"]; 
+            dataGridView1.DataSource = DS.Tables["clt"];
+
+
+
+            
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -106,6 +111,7 @@ namespace Gestion_des_clients
             SqlCommandBuilder cb = new SqlCommandBuilder(DA);
             DA.Update(DS,"clt");
             MessageBox.Show("Les données ont été bien Enregistrées");
+            
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -133,6 +139,64 @@ namespace Gestion_des_clients
                 }
 
             }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+            int p = -1;
+            for (int i = 0; i < DS.Tables["clt"].Rows.Count; i++)
+            {
+                if (textBox5.Text == DS.Tables["clt"].Rows[i][3].ToString())
+                {
+                    p = i;
+                }
+            }
+            if (p == -1)
+            {
+                MessageBox.Show("client not found");
+            }
+            else
+            {
+
+                if (DS.Tables["clt"] != null)
+                {
+                    DS.Tables["clt"].Clear();
+                }
+                DA = new SqlDataAdapter("Select  * from client where Ville = '" + textBox5.Text + "'", cnx);
+                DA.Fill(DS, "clt");
+                dataGridView1.DataSource = DS.Tables["clt"];
+            }
+
+        }
+
+        private void textBox5_TextChanged_1(object sender, EventArgs e)
+        {
+
+
+        
+    }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (DS.Tables["clt"] != null)
+            {
+                DS.Tables["clt"].Clear();
+            }
+            DA = new SqlDataAdapter("Select  * from client ", cnx);
+            DA.Fill(DS, "clt");
+            dataGridView1.DataSource = DS.Tables["clt"];
+
         }
     }
 }
